@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  |<head>
+    <title>{{job.tittle}} - Harshini Academy</title>
+    {% include 'bootstrap.html' %}
+  </head>
+  <body>
+    {% include 'nav.html' %}
+    {% include 'banner.html' %}
+    <div class="container">
+     <h1 class="text-center mt-2 mb-4"> Application to {{job.tittle}}  </h1>
+    <h2>{{job.tittle}}</h2>
+    <h4 class="lead mt-0">Location: {{job.location}}</h4>
+    <h3> Course Fees:</h3>
+    <p><b>Rs.</b> {{job.fees}}</p>
+    <h5>Why want to studey : {{job.tittle}}</h5>
+      <ul>
+        {% for line in job.responsibities.split("\n") %}
+          <li>{{line}}</li>
+        {% endfor %}
+      </ul>
+    </div>
+     {% include 'fotter.html' %}
+  </body>
+</html>

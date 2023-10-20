@@ -6,11 +6,11 @@
   </div>
   {% if 'fees' in job %}
   <div>
-    <b>Fees:</b>{{job['fees']}}
+    <b>Fees: </b> {{job['fees']}}
   </div>
   {% endif %}
   </div>
   <div class="col-2">
-    <button type="button" class="btn btn-outline-primary">Apply</button>
+    <a href="/job/{{job['id']}}" type="button" class="btn btn-outline-primary">Apply</a>
   </div>
 </div>
