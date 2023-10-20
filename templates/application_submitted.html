@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Application Submittted</title>
+    {% include 'bootstrap.html' %}
+  </head>
+  <body>
+    {% include 'nav.html' %}
+      <div class="container">
+     <h1 class="text-center mt-2 mb-4"> Harshini Academy</h1>
+      
+        <style>
+
+            #banner{
+              height: 360px;
+              width: 100%;
+              object-fit: cover;
+            }
+
+          </style>
+        <img class="img-fluid" id="banner" src= "https://clg-projecct--website0090.repl.co/static/cartoon.jpeg.jpg" height="520" >
+      <h2 class="text-center"> Successfully completed </h2>
+        <p> Your application for the role of <b>{{job['tittle']}}</b> at Harshini Academy</p>
+    <b>Full Name</b>
+    <p class="mb-2">{{application['fully_name']}}</p>
+    <b>Email</b>
+       <p>{{application['email']}}</p>
+    <b>Phone</b>
+    <p class="mb-2">{{application['phone']}}</p>
+    <b>Education</b>
+    <p class="mb-2">{{application['education']}}</p>
+      </div>
+    {% include 'fotter.html' %}
+  </body>
+</html>

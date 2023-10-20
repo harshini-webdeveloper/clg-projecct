@@ -1,0 +1,23 @@
+<h4>Application Form</h4>
+<form action="/job/{{job['id']}}/apply" method='post'>
+  <div class="mb-3">
+    <label for="fully_name" class="form-label">Name</label>
+    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+  </div>
+  <div class="mb-3">
+    <label for="phone" class="form-label">Phone</label>
+    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="education" class="form-label">Education</label>
+    <textarea class="form-control" id="education" name="education" rows="3" placeholder="Enter your education" 
+      ></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
