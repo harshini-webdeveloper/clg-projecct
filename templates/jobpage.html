@@ -6,7 +6,8 @@
   </head>
   <body>
     {% include 'nav.html' %}
-    {% include 'banner.html' %}
+   
+    <img class="img-fluid" id="banner" src= "https://clg-projecct--website0090.repl.co/static/code.jpg" height="520" >
     <div class="container">
      <h1 class="text-center mt-2 mb-4"> Application to {{job.tittle}}  </h1>
     <h2>{{job.tittle}}</h2>
@@ -21,6 +22,7 @@
       </ul>
       {% include 'application_form.html' %}
     </div>
+    <p></p>
      {% include 'fotter.html' %}
   </body>
 </html>
